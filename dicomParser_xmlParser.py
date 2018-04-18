@@ -45,5 +45,6 @@ for file in os.listdir(dir):
                     #print(elem.attrib)
                     cv2.imwrite('C2'+'_'+str(b)+'_'+str(file)+'.png', img)
                     b=b+1
-    except OSError:
+    except:
+        print( "Error: XML格式錯誤")
         continue
